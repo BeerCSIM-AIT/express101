@@ -14,7 +14,10 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
+require("./db")(app);
+
 app.use("/product", productRoute);
+app.use("/employee", employeeRoute);
 
 // Routing Table
 app.get("/",(req, res)=>{
