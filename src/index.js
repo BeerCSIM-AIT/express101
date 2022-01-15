@@ -15,6 +15,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use("/product", productRoute);
+app.use("/employee", employeeRoute);
 
 // Routing Table
 app.get("/",(req, res)=>{
